@@ -10,10 +10,8 @@ RAVF is loosely based on the [Astro Digital Video](http://www.hristopavlov.net/a
 
 Install:
 
-	pip install --upgrade pip
 	pip install "git+https://github.com/ChasinSpin/ravf.git"
 
 Upgrade:
 
-	pip install --upgrade pip
 	pip install --upgrade --force-reinstall "git+https://github.com/ChasinSpin/ravf.git"`
