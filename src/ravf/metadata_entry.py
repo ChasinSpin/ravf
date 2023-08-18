@@ -105,7 +105,7 @@ class RavfMetadataEntry:
             else:
                 self.value = value
         else:
-            raise ValueError('type of value does not match entry_type')
+            raise ValueError('type of value does not match entry_type for: %s %s!=%s' % (self.name, (self.__python_type_for_entry_type(self.entry_type)), str(type(value).__name__)))
 
     def __init__(self, name: str, entry_type: RavfMetadataType, value: object, requires_update = False):
         self.name = UTF8String(name)
