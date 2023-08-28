@@ -12,7 +12,7 @@ class RavfImageUtils:
 
     @classmethod
     def bytes_to_np_array_16bit(cls, buffer: bytes, stride: int, height: int) -> np.array:
-        """Converts bytes to a numpy array of uint8"""
+        """Converts bytes to a numpy array of uint16"""
         assert (stride * height) == len(buffer), 'Stride x height != buffer length'
         image = np.frombuffer(buffer, dtype=np.uint16)
         image = image.reshape(height, stride//2)
