@@ -110,4 +110,4 @@ class RavfWriter:
         self.index.write(file_handle)
 
         print(self.header)
-        print(self.index)
+        #print(self.index)
