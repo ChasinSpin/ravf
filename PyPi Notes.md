@@ -2,6 +2,8 @@
 
 My notes, not for general consumption
 
+	On Mac:
+	
 	conda activate pymovie-env
 	pip3 install build	# if not already installed
 	pip3 install twine	# if not already installed
