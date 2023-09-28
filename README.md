@@ -14,4 +14,4 @@ Install:
 
 Upgrade:
 
-	pip install --upgrade --force-reinstall "git+https://github.com/ChasinSpin/ravf.git"`
+	pip install --upgrade --force-reinstall "git+https://github.com/ChasinSpin/ravf.git"
