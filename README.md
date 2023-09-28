@@ -14,4 +14,4 @@ Install:
 
 Upgrade:
 
-	pip install --upgrade --force-reinstall ravf
+	pip install --upgrade ravf
