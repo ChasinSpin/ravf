@@ -14,7 +14,7 @@ class RavfReader:
         offset_index = self.header.metadata_value('OFFSET-INDEX')
         file_handle.seek(offset_index, 0)
         self.index = RavfIndex.deserialize(file_handle)
-        print(self.index)
+        #print(self.index)
 
     def metadata(self) -> list((UTF8String, object)):
         return self.header.metadata()
