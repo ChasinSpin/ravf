@@ -9,7 +9,7 @@ class RavfReader:
     """ Returns required_metadata_entries user_metadata_entries and index_table """
     def __init__(self, file_handle):
         self.header = RavfHeader.deserialize(file_handle)
-        print(self.header)
+        #print(self.header)
 
         offset_index = self.header.metadata_value('OFFSET-INDEX')
         file_handle.seek(offset_index, 0)
