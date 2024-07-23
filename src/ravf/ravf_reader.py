@@ -74,6 +74,7 @@ class RavfReader:
             image = RavfImageUtils.scale_10_to_16bit(image)
             image = RavfImageUtils.debayer_GBRG_to_GRAY(image)
         elif self.metadata_value('IMAGE-FORMAT') == RavfImageFormat.FORMAT_16BIT.value:
+            #print('Found 16bit')
             image = RavfImageUtils.bytes_to_np_array_16bit(frame.data, stride, height)
         else:
             raise ValueError('Unrecognized image type')
